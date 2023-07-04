@@ -1,0 +1,17 @@
+@import './variables/icons';
+$material-design-icons-font-path: '~@material-design-icons/font/';
+@import '@material-design-icons/font';
+@import './variables/colors';
+@import './variables/fontSize';
+@import './variables/screenSize';
+@import './variables/z-index';
+@import './variables/mixins';
+
+
+img:not(.isLoaded) {
+  max-width: 60px !important;
+  max-height: 50px !important;
+  height: auto;
+  vertical-align: middle;
+  margin: 0 auto;
+}

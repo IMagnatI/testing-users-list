@@ -1,0 +1,55 @@
+$icons-font: "icons";
+
+@font-face {
+    font-family: $icons-font;
+    src: url("/fonts/icons.ttf?b6311c5f0e1039ce01e0fce234d9e7c8") format("truetype"),
+url("/fonts/icons.woff?b6311c5f0e1039ce01e0fce234d9e7c8") format("woff"),
+url("/fonts/icons.woff2?b6311c5f0e1039ce01e0fce234d9e7c8") format("woff2");
+}
+
+i[class^="icon-"]:before, i[class*=" icon-"]:before {
+    font-family: icons !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$icons-map: (
+    "arrow-right": "\f101",
+    "calendar_add_on": "\f102",
+    "check_circle": "\f103",
+    "close-cross": "\f104",
+    "error_exclamation_point": "\f105",
+    "error_form": "\f106",
+    "forward": "\f107",
+    "heart": "\f108",
+);
+
+.icon-arrow-right:before {
+    content: map-get($icons-map, "arrow-right");
+}
+.icon-calendar_add_on:before {
+    content: map-get($icons-map, "calendar_add_on");
+}
+.icon-check_circle:before {
+    content: map-get($icons-map, "check_circle");
+}
+.icon-close-cross:before {
+    content: map-get($icons-map, "close-cross");
+}
+.icon-error_exclamation_point:before {
+    content: map-get($icons-map, "error_exclamation_point");
+}
+.icon-error_form:before {
+    content: map-get($icons-map, "error_form");
+}
+.icon-forward:before {
+    content: map-get($icons-map, "forward");
+}
+.icon-heart:before {
+    content: map-get($icons-map, "heart");
+}

@@ -1,0 +1,25 @@
+@font-face {
+  font-family: 'Chivo';
+  font-style: normal;
+  src: url('@/static/fonts/base/Chivo-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Chivo';
+  font-style: normal;
+  font-weight: bold;
+  src: url('@/static/fonts/base/Chivo-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Chivo';
+  font-weight: bold;
+  font-style: italic;
+  src: url('@/static/fonts/base/Chivo-BoldItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Chivo';
+  font-style: italic;
+  src: url('@/static/fonts/base/Chivo-Italic.woff') format('woff');
+}

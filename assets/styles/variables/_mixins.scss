@@ -1,0 +1,43 @@
+@import '@/assets/styles/variables/_colors.scss';
+@import '@/assets/styles/variables/_fontSize.scss';
+
+@mixin close-button {
+  position: absolute;
+  display: flex;
+  top: 9px;
+  right: 0;
+  align-items: center;
+  border-radius: 100%;
+  padding: 3px;
+  margin-left: auto;
+  background-color: $cl-gray-hover;
+
+  :deep(.c-UIIcon) {
+    i {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      font-size: $fs-2xl;
+      color: $cl-black;
+    }
+  }
+}
+
+@mixin ck-editor {
+  :deep(.text-huge) {
+    font-size: 1.8em;
+  }
+
+  :deep(.text-big) {
+    font-size: 1.4em;
+  }
+
+  :deep(.text-small) {
+    font-size: 0.85em;
+  }
+
+  :deep(.text-tiny) {
+    font-size: 0.7em;
+  }
+}

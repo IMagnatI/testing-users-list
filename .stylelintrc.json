@@ -1,0 +1,35 @@
+{
+  "customSyntax": "postcss-html",
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-recommended-vue",
+    "stylelint-config-prettier"
+  ],
+  "plugins": ["stylelint-declaration-use-variable"],
+  "files": ["*.vue", "**/*.vue", "*.scss", "**/*.scss"],
+  "rules": {
+    "property-no-vendor-prefix": null,
+    "at-rule-no-unknown": null,
+    "selector-type-no-unknown": null,
+    "no-descending-specificity": null,
+    "no-empty-source": true,
+    "sh-waqar/declaration-use-variable": [
+      ["/color/", "z-index", { "ignoreValues": ["transparent", "inherit"] }]
+    ],
+    "font-family-no-missing-generic-family-keyword": null,
+    "selector-class-pattern": "^[a-zA-Z0-9-_]+$",
+    "indentation": [
+      2,
+      {
+        "baseIndentLevel": 0
+      }
+    ],
+    "max-nesting-depth": [
+      3,
+      {
+        "ignoreAtRules": ["include"]
+      }
+    ]
+  },
+  "ignoreFiles": ["./coverage/**/*", "./dist/**/*", "**/*.yml"]
+}

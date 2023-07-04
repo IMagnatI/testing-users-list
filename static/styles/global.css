@@ -1,0 +1,11 @@
+html,
+:root {
+  position: relative;
+}
+
+body {
+  font-family: 'Chivo', sans-serif;
+  font-style: normal;
+  max-width: 100vw;
+  min-height: 100vh;
+}

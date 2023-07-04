@@ -1,0 +1,13 @@
+{
+  "semi": false,
+  "singleQuote": true,
+  "overrides": [
+    {
+      "files": ["translations/**/*.ts"],
+      "options": {
+        "printWidth": 0,
+        "endOfLine": "lf",
+      }
+    }
+  ]
+}
